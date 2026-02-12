@@ -1,0 +1,42 @@
+.roboto-mono-title {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-resaltar {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 230;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+.space-grotesk-Veryficado {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@media screen and (max-width: 2800px) {
+  h1{
+    text-align: center;
+  }
+  img{
+    width: 2440px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  h1{
+    text-align: right ;
+  }
+      img{
+    width: 1800px;
+    height: auto;
+  }
+  }
