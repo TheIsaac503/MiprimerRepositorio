@@ -14,7 +14,7 @@ Algoritmo Suma_Solo_Numeros_Positivos
 			Escribir "Elige un numero que no sea ", numer, " Por Favor";
 		FinSi
 		si numer < 0 Entonces
-			Escribir "Pudimos seguir sumando, pero elegiste " , numer;
+			Escribir "Pudimos seguir, pero desidiste pasarte al lado negativo con " , numer;
 		FinSi
 		
 	Hasta Que numer < 0
