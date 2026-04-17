@@ -65,3 +65,23 @@ print(NombreSinnumerosOEspacios)
 
 if respuetaComparacionNombre and NombreSinnumerosOEspacios:
     print("El nombre del tramite es correcto")
+
+
+def tranformar(nombre):
+    nombre = nombre.lower()
+    nombre = nombre.strip()
+    nombre = nombre.replace(" ", "")
+    return nombre
+
+
+def validar(nombre, nombreComparacion):
+    return nombre.casefold() == nombreComparacion.casefold and nombre.isalnum()
+
+
+nombre1 = tranformar(NOMBREtRAMITE)
+nombre2 = tranformar(nombreComparacion)
+
+if validar(nombre1, nombre2):
+    print("nombre valido para el tramite")
+else:
+    print("nombre no valido para el tramite")

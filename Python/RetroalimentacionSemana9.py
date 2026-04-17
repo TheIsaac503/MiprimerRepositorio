@@ -44,10 +44,121 @@ def saludo(nombres):
 
 ## Colocar el nombre de la serie como titulo
 fmaTemu = Serie.title()
-saludo(Serie)
+# saludo(Serie)
 # saludo(fmaTemu)
 fnaMayusculas = Serie.upper()
+saludo(fnaMayusculas)
 ## deprogracion Lineal
+FullmetalCapitalizer = fnaMayusculas.swapcase().title()
+## cuando encadenamos funciones se indica que la salidad de la funcion actual
+# 3 es la entrada de la siguiente funcion.
 
-fullmetalcapitalizer = Serie.capitalize()
-saludo(fullmetalcapitalizer)
+saludo(FullmetalCapitalizer)
+
+## compara cadenas de texo
+comparar1 = "Ever"
+comparar2 = "Ever"
+
+# casefold para comparar y pasar a  minusculas
+variableTemporal = comparar2.casefold()
+comparar = comparar1.casefold() == comparar2.casefold()
+# print(comparar)
+## casefold nos dara true unicamente si los elementos son identicos sino nos indcara un false
+
+## para verificar si es nu nuemero o un caracter vamos a utilizar isalfa()
+clasicas2005 = "Gasolina"
+comprarisAlpha = clasicas2005.isalpha()
+# print(comprarisAlpha, 2005)
+# isalpha nos va a dar true si el string que se le esta enviando es unicamente letras
+
+## si lo que quiero es que sea solo numero  isalnum
+
+letraCancion = " Los que paso, paso, entre tu y yo."  # 3 no tengo numeor
+decada = "10"
+
+ejemplo = letraCancion.isalnum()
+# print(ejemplo)
+ejemplo = decada.isalnum()
+# print(ejemplo)
+## isalnum verifica si la cadena de texto solo tiene numeros si solo tiene numeros nos va a dar tru
+# si etiene u solo espacio dara false
+
+## varificar que solo sean digitos
+comprobarDecadas = decada.isdigit()
+print(comprobarDecadas)
+
+## si la Cadena de texto tiene numeros
+siTieneNumero = "2026"
+## este texto tiene nunero -> True
+## isnumeric -> es un espacio en la memoria
+## isnumeric() -> dentro del la funcion
+respuesta = siTieneNumero.isnumeric()
+print(respuesta)
+
+## isnumeric como numeros que van a estar ejecutandose desde una
+## cadena de texto
+
+isLowerCase1 = "Ella se fue, me avandono y destrozo mi corazoon"
+minusculas = isLowerCase1.islower()
+## isLowerCase()
+## isLowerCase.isLowerCase()
+## true o false
+print("solo minusculas", minusculas)
+
+## 3 minutos
+## Cristiano Leo sung
+
+## solo debe de tener mayusculas
+fraseIconioca = "Soltala Erika"
+respuesta = fraseIconioca.isupper()
+print(respuesta)
+
+## tener un contenido -> entrada a las funcion que inicie con el .
+
+respuesta = Serie.upper().isupper()
+## esta funcion la vamos a encadenar con la otra >:)
+print(respuesta)
+
+respuesta = fraseIconioca.title().istitle()
+print(fraseIconioca, respuesta)
+## cuando una funcion retorna algo ( tipo de datos)
+## string ->  espacio de memoria diferentes al de un espacio numerico
+## int
+# Float
+## Decimal
+## Boolean
+
+# string  -> E v e r  -> lista o un array
+# variable :
+# tiene un tipo
+# nobre sea unico ->  indice
+# no puede inicar con variables
+# va a tomar siempre el valor de la ultima modificacion
+print(Serie)
+Serie = "Chapulin Colorado"
+print(Serie)
+controlarEspacio = Serie.isspace()
+print(controlarEspacio)
+## islower
+# isupper
+# isspace
+# isalnum
+# isalpha
+
+## Metodos de busqueda
+poema = """Ella amará a otro hombre.
+Yo voy lejos, andando hacia el olvido.
+Y puede suceder que alguien me nombre,
+pero ella fingirá no haber oído.
+
+Ella amará a otro hombre:
+el tiempo pasa y el amor finaliza,
+y es natural que lo que fue una brasa
+acabe convirtiéndose en ceniza."""
+
+contador = poema.count("i")
+contador = poema.startswith("Ella")
+contador = poema.endswith("ceniza.")
+
+poemaModificado = poema.replace("Ella", "lupita").replace("amará", "floow")
+print(poemaModificado)
